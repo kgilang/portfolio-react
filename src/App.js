@@ -95,6 +95,14 @@ const Contact = () => {
   );
 };
 
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <p>© 2024 Kukuh Gumilang. All Rights Reserved.</p>
+    </footer>
+  );
+};
+
 const App = () => {
   return (
     <Router>
@@ -105,6 +113,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
